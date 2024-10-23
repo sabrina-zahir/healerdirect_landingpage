@@ -1,0 +1,764 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* dynamic values */
+:root{
+    --anton-font:"Anton", sans-serif;
+    --poppins-font:"Poppins", sans-serif;
+    --primary-color:#F15926;
+    --secondary-color:#0B4B78;
+    --white-color: #fff;
+}
+
+/* heaadr top css */
+.header_top{
+    background-color: #298843;
+    text-transform: uppercase;
+    height: 30px;
+    padding: 5px 16px;
+    text-align: center;
+    color: white;
+    
+}
+
+.header_top p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--anton-font);
+    font-weight: 300;
+    color: var(--white-color);
+    letter-spacing: .65px;
+
+}
+/* main header css */
+.main_header{
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+    
+}
+/* button 1 css */
+.btn1{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 20px;
+    background-color: var(--primary-color);
+    font-family: "Anton", sans-serif;
+    font-weight: 200;
+    border:none;
+    border-radius:8px;
+    color: var(--white-color);
+    letter-spacing: .65px;
+    transition: all .4s linear;
+}
+
+.btn1:hover{
+    background-color:#e28a07;
+    transform: translateY(-2px);
+    
+}
+
+/* banner  css */
+#banner{
+    padding: 100px 200px;
+    background-image: url(../images/banner_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#banner::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005c;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+#banner .content{
+    max-width: 65%;
+    position: relative;
+    z-index: 2;
+
+}
+#banner .content h1{
+    font-size: 64px;
+    line-height: 72px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--white-color);
+}
+#banner .content h3{
+    font-size: 28px;
+    line-height: 36px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--white-color);
+    margin-top: 10px;;
+    
+}
+#banner .content ul{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#banner .content ul li{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+#banner .content ul li img{
+    width:15px;
+    height:15px;
+    margin-right: 8px;
+}
+
+/* button 2 css */
+.btn2{
+    
+    font-size: 24px;
+    line-height: 24px;
+    padding: 15px 40px;
+    background-color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border:none;
+    border-radius:25px;
+    color: var(--white-color);
+    letter-spacing: .65px;
+    transition: all .4s linear;
+    margin-top: 20px;
+}
+
+.btn2:hover{
+    background-color:#1493f5;
+    transform: translateY(-2px);
+    
+}
+
+/* about us */
+#about_us{
+    padding: 50px 200px;
+    background-color: var(--white-color);
+   
+}
+#about_us .container .row{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     gap:50px;
+}
+#about_us .container .row .col{
+    max-width: calc(50% - 25px);
+    width: 100%;
+
+}
+#about_us .container .row .col img{
+    width:100%;
+    height: 100%;
+}
+#about_us .container .row .col .content h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+#about_us .container .row .col .content h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+#about_us .container .row .col .content p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    
+}
+/* BENEFITS CSS */
+#benefits{
+    background-color:  rgb(235, 235, 235);
+    padding: 50px 200px;
+}
+#benefits .container{
+    /* display: flex; */
+    text-align: center;
+}
+#benefits .container h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding: 5px 300px;
+}
+
+#benefits .container h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#benefits .container p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+#benefits .container .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    gap: 10px;
+
+}
+#benefits .container .content .cannabis_education{
+    height: 200px;
+    width:calc(25% - 10px);
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+
+}
+#benefits .container .content .dosage_programs{
+    height: 200px;
+    width:calc(25% - 10px);
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+    
+}
+#benefits .container .content .industry_training{
+    height: 200px;
+    width:calc(25% - 10px);
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+}
+#benefits .container .content .healerCBD_com{
+    height: 200px;
+    width: calc(25% - 10px);
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+}
+
+.healerCBD_com:hover{
+    transform: translateY(-8px);
+}
+.dosage_programs:hover{
+    transform: translateY(-8px);
+}
+.industry_training:hover{
+    transform: translateY(-8px);
+}
+.cannabis_education:hover{
+    transform: translateY(-8px);
+}
+
+/* About Product CSS */
+#about_product{
+ padding: 50px 200px;
+}
+
+#about_product .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    align-items: center;
+}
+#about_product .container .row .col{
+    max-width: calc(50% - 25px);
+    width: 100%;
+
+}
+#about_product .container .row .col img{
+    width:90%;
+    height: auto;
+
+}
+#about_product .container .row .col h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+
+}
+#about_product .container .row .col h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#about_product .container .row .col ul{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#about_product .container .row .col ul li{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#about_product .container .row .col ul li img{
+    width:15px;
+    height:15px;
+    margin-right: 8px;
+}
+
+/* Best Use CSS */
+#best_use{
+    background-color:  rgb(235, 235, 235);
+    padding: 50px 200px;
+}
+
+#best_use .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    gap:50px;
+    align-items: center;
+}
+#best_use .container .row .col{
+    max-width: calc(50% - 35px);
+    width: 100%;
+}
+#best_use .container h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding: 5px 0px;
+}
+
+#best_use .container h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#best_use .container p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+#best_use .container .row .col img{
+    width:90%;
+    height: auto;
+}
+
+/* Healer Gummies */
+#healer_gummies{
+    padding: 10px 200px;
+   }
+   
+   #healer_gummies .container .row{
+       display: flex;
+       flex-wrap: wrap;
+       gap:50px;
+       align-items: center;
+   }
+   #healer_gummies .container .row .col{
+       max-width: calc(50% - 25px);
+       width: 100%;
+   
+   }
+   #healer_gummies .container .row .col img{
+       width:100%;
+       height: auto;
+   
+   }
+   #healer_gummies .container .row .col p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-top: 10px;
+   
+   }
+   #healer_gummies .container .row .col h3{
+       font-size: 24px;
+       line-height: 30px;
+       font-family: var(--anton-font);
+       font-weight: 400;
+       color: var(--primary-color);
+   }
+   
+   #healer_gummies .container .row .col h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding: 0px 0px;
+}
+
+/* educational_articles css */
+#educational_articles{
+    padding: 50px 200px;
+    background-color:#e7ffcf;
+    text-align: center;
+}
+#educational_articles h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding: 0px 0px;
+}
+#educational_articles h3{
+       font-size: 24px;
+       line-height: 30px;
+       font-family: var(--anton-font);
+       font-weight: 400;
+       color: var(--secondary-color);
+}
+#educational_articles p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+#educational_articles .container .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    gap: 10px;
+    /* width:25%; */
+}
+#educational_articles .container .content img{
+    width:100%;
+    height: auto;
+
+}
+#educational_articles .container .content .first{
+    background-color: var(--white-color);
+    height: 550px;
+    width:calc(25% - 10px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+}
+.first:hover{
+    transform: translateY(-8px);
+}
+
+#educational_articles .container .content .second{
+    background-color: var(--white-color);
+    height: 550px;
+    width:calc(25% - 10px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+}
+.second:hover{
+    transform: translateY(-8px);
+}
+
+#educational_articles .container .content .third{
+    background-color: var(--white-color);
+    height: 550px;
+    width:calc(25% - 10px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+}
+.third:hover{
+    transform: translateY(-8px);
+}
+
+#educational_articles .container .content .fourth{
+    background-color: var(--white-color);
+    height: 550px;
+    width:calc(25% - 10px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:30px 20px;
+    transition: all .3s linear;
+}
+.fourth:hover{
+    transform: translateY(-8px);
+}
+
+/* Why choose us css */
+#why_us{
+    padding: 50px 200px;
+    text-align: center;
+    background-color:#fff;
+}
+#why_us .btn2{
+    margin-top: 45px;
+}
+#why_us h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#why_us h3{
+    font-size: 24px;
+       line-height: 30px;
+       font-family: var(--anton-font);
+       font-weight: 400;
+       color: var(--secondary-color);
+       margin-top: 20px;
+       margin-bottom: 20px;
+}
+
+#why_us .container{
+    margin-top: 45px;
+    padding: 0px 100px;
+}
+
+#why_us .container .content{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#why_us .container .heading{
+    padding-left: 40px;
+    padding-right: 40px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#why_us .container .heading .blank{
+    width:370px;
+    height:auto;
+}
+#why_us .container .content img{
+    height: 30px;
+    width:30px;
+}
+
+/* Testemonials css */
+#testemonials{
+    padding: 50px 200px;
+    text-align: center;
+    background-color:#f3fbe9;
+}
+#testemonials h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+
+}
+
+#testemonials .container{
+    margin-top: 45px;
+}
+#testemonials .content{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+#testemonials .content img{
+    width:calc(25% - 10px);
+    height: auto;
+}
+
+#testemonials .btn2{
+    margin-top: 45px;
+}
+
+/* HEALER'S STORY*/
+#healers_story{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 150px 20px;
+    background-image: url(../images/banner_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#healers_story h2{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: var(--anton-font);
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+#healers_story h3{
+    font-size: 24px;
+       line-height: 30px;
+       font-family: var(--anton-font);
+       font-weight: 400;
+       color: var(--white-color);
+       margin-top: 20px;
+       margin-bottom: 20px;
+       position: relative;
+}
+
+#healers_story::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005c;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+#healers_story .content{
+    max-width:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left:80px;
+    padding: 0px 300px;
+    z-index: 2;
+    align-items: center;
+
+}
+
+/* button 3 css */
+.btn3{
+    
+    font-size: 24px;
+    line-height: 24px;
+    padding: 15px 40px;
+    width:50%;
+    height:auto;
+    background-color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border:none;
+    border-radius:25px;
+    color: var(--white-color);
+    letter-spacing: .65px;
+    transition: all .4s linear;
+    margin-top: 20px;
+}
+
+.btn3:hover{
+    background-color:#e28a07;
+    transform: translateY(-2px);
+    
+}
+/* final sectio css */
+#final_section{
+    padding: 50px 200px;
+    background-color:#ffffff;
+
+}
+#final_section .container .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#final_section .container .content img{
+    width: 400px;
+    height:auto;
+}
+#final_section .container .content h3{
+    font-size: 22px;
+       line-height: 26px;
+       font-family: var(--anton-font);
+       font-weight: 400;
+       color: #298843;
+}
+#final_section .container .content ul{
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: center;
+}
+#final_section .container .content ul li{
+    font-family: var(--poppins-font);
+    color: #777;
+}
+#final_section .container .content ul li img{
+    width:18px;
+    height:18px;
+    margin-right: 8px;
+}
+#final_section .container .content p{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: var(--poppins-font);
+    color: #777;
+    margin-top: 45px;
+    text-align: center;
+
+}
+/* footer */
+footer{
+    background-color: #298843;
+    padding: 50px 200px;
+}
+
+footer .container .content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .container .content h3{
+    font-size: 18px;
+       line-height: 24px;
+       font-family: var(--poppins-font);
+       font-weight: 400;
+       color: var(--white-color);
+}
+footer .container .content img{
+    width:20px;
+    height:20px;
+
+}
